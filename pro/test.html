@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillExchange</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f2f2f2;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        li:hover {
+            background-color: #ddd;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #course-details {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SkillExchange</h1>
+    </header>
+    <main>
+        <h2>Available Courses</h2>
+        <ul id="course-list">
+            <li onclick="showCourseDetails('course1')">Web Development</li>
+            <li onclick="showCourseDetails('course2')">Data Science</li>
+            <li onclick="showCourseDetails('course3')">Graphic Design</li>
+        </ul>
+
+        <div id="course-details" class="hidden">
+            <h3>Course Details</h3>
+            <p id="details-text"></p>
+            <button onclick="hideCourseDetails()">Close</button>
+        </div>
+    </main>
+    <script>
+        const courseDetails = {
+            course1: "Web Development: Learn how to build websites using HTML, CSS, and JavaScript.",
+            course2: "Data Science: Understand data analysis, machine learning, and data visualization.",
+            course3: "Graphic Design: Explore design principles, typography, and software tools."
+        };
+
+        function showCourseDetails(courseId) {
+            const detailsText = document.getElementById('details-text');
+            detailsText.textContent = courseDetails[courseId];
+            document.getElementById('course-details').classList.remove('hidden');
+        }
+
+        function hideCourseDetails() {
+            document.getElementById('course-details').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
