@@ -1,0 +1,92 @@
+/* home page*/
+body {
+    background-color: #1e1e1e;
+    color: white;
+}
+.navbar {
+    background-color: #6f42c1;
+}
+.btn-yellow {
+    background-color: #f1c40f;
+    color: black;
+}
+.btn-yellow:hover {
+    background-color: #d4ac0d;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+/* Adjust Carousel Controls Position */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Reduce button width */
+}
+
+.carousel-control-prev {
+    left: -50px; /* Move left button further left */
+}
+
+.carousel-control-next {
+    right: -50px; /* Move right button further right */
+}
+
+/* courses page*/
+.course-card {
+    background-color: #495057;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    transition: transform 0.3s;
+}
+.course-card:hover {
+    transform: scale(1.05);
+}
+a {
+    text-decoration: none !important;
+    color: white;
+}
+/* signin and Signup and used in forms*/
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #495057;
+    border-radius: 10px;
+}
+/*contact page*/
+.contact-info {
+    background-color: #495057; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/*lessonlist*/
+.lessonlist,.lessonlistholder{
+    background-color: #495057; 
+    color: white;
+}
+.lessonlist:hover{
+    background-color: #f1c40f;
+    color: black;     
+}
+/*lessons ->like pythonlesson*/
+.lesson-box {
+    background-color: #495057;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+        }
+.lesson-box:hover, .active-lesson {
+    background-color: grey;
+    color: black;
+ }
+footer {
+    background-color: #6f42c1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}

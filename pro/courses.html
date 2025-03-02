@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillexchange - Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+<style>
+        body {
+            background-color: #1e1e1e; /* Dark Gray */
+            color: white;
+        }
+        .navbar {
+            background-color: #6f42c1; /* Purple */
+        }
+        .btn-yellow {
+            background-color: #f1c40f; /* Yellow */
+            color: black;
+        }
+        .btn-yellow:hover {
+            background-color: #d4ac0d; /* Darker Yellow */
+        }
+        a {
+            text-decoration: none !important;
+        }
+        .course-card {
+            background-color: #495057; /* Darker Gray */
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #6f42c1; /* Purple */
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="home.html">Skillexchange</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="signin.html" class="btn btn-yellow ms-3">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses Section -->
+    <div class="container py-5">
+        <h2 class="text-warning text-center">Available Courses</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="course-card">
+                    <h4><a href="coursedetail/Advance_py.html"  class="text-warning">Advanced Python Programming</a></h4>
+                    <p>Deep dive into Python with advanced concepts and real-world applications.</p>
+                    <button class="btn btn-sm btn-yellow" onclick="window.location.href='enroll/enrollment.html?courseId=1'">Enroll Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <h4><a href="coursedetail/data_sc.html"  class="text-warning">Data Science Bootcamp</a></h4>
+                    <p>Learn data analysis, visualization, and machine learning techniques.</p>
+                    <button class="btn btn-sm btn-yellow" onclick="window.location.href='enroll/enrollment.html?courseId=2'">Enroll Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                   <h4><a href="coursedetail/digi_art.html"  class="text-warning">Digital Art and Design</a></h4>
+                    <p>Master digital tools to create stunning artwork and designs.</p>
+                    <button class="btn btn-sm btn-yellow" onclick="window.location.href='enroll/enroll/enrollment.html?courseId=3'">Enroll Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <h4><a href="coursedetail/cybersecurity.html" class="text-warning">Introduction to Cybersecurity</a></h4>
+                    <p>Understand the fundamentals of cybersecurity and how to protect systems.</p>
+                    <button class="btn btn-sm btn-yellow" onclick="window.location.href='enroll/enrollment.html?courseId=4'">Enroll Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <h4><a href="coursedetail/mobile.html"class="text-warning">Mobile App Development</a></h4>
+                    <p>Learn to build mobile applications for iOS and Android platforms.</p>
+                    <button class="btn btn-sm btn-yellow" onclick="window.location.href='enroll/enrollment.html?courseId=5'">Enroll Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <h4><a href="coursedetail/creative_writing.html"class="text-warning">Creative Writing Workshop</a></h4>
+                    <p>Enhance your writing skills and explore different genres of writing.</p>
+                    <button class="btn btn-sm btn-yellow" onclick="window.location.href='enroll/enrollment.html?courseId=6'">Enroll Now</button>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="text-warning">&copy; 2025 Skillexchange. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

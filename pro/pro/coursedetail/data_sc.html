@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Bootcamp - Skillexchange</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e1e1e; /* Dark Gray */
+            color: white;
+        }
+        .navbar {
+            background-color: #6f42c1; /* Purple */
+        }
+        footer {
+            background-color: #6f42c1; /* Purple */
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .mentor-card {
+            background-color: #495057; /* Darker Gray */
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="index.html">Skillexchange</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button class="btn btn-yellow ms-3">Sign In</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Details Section -->
+    <div class="container py-5">
+        <h2 class="text-warning">Data Science Bootcamp</h2>
+        <p>Master data science with hands-on projects, real-world datasets, and expert mentorship.</p>
+        <p>Duration: 12 weeks</p>
+        <p>Prerequisites: Basic programming knowledge and statistics fundamentals.</p>
+        <button class="btn btn-yellow" onclick="window.location.href='enrollment.html?courseId=2'">Enroll Now</button>
+
+        <!-- Mentor Details Section -->
+        <div class="mentor-card">
+            <h4 class="text-warning">Meet Your Mentor</h4>
+            <div class="d-flex align-items-center">
+                <img src="mentor1.jpg" alt="Mentor img" class="rounded-circle" style="width: 80px; height: 80px; margin-right: 15px;">
+                <div>
+                    <h5>Jane Smith</h5>
+                    <p>Data Scientist with over 8 years of experience in machine learning, AI, and big data analytics.</p>
+                    <p>Email: janesmith@example.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="text-warning">&copy; 2025 Skillexchange. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
